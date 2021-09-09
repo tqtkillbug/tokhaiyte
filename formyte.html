@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Khai Y Te Clone</title>
+    <style>
+        .fully{
+            width: 100%;
+        }
+        h2,h3,h5{
+            text-align: center;
+        }
+        h5{
+            color: red;
+        }
+        table,h4{
+            margin-left: 200px;
+        }
+        .chon{
+            margin-left: 200px;
+        }
+        .upfile{
+            margin-left: 200px;
+        }
+        button{
+            margin-left: 500px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>TỜ KHAI Y TẾ ĐỐI VỚI NGƯỜI NHẬP CẢNH </h2>
+    <h3>ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM    </h3>
+    <h5>Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự </h5>
+    <form action="#">
+    <div>
+        <form action="#">
+            <table style="width: 80%;">
+                <tr>
+                    <td>
+                        Đối tượng <span>(*)</span>
+                    </td>
+                    
+                    <td colspan="3">Cửa khẩu <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="doituong">
+                            <option value="0">-Chọn-</option>
+                            <option value="1">Chuyên gia</option>
+                            <option value="2">Người Việt Nam</option>
+                            <option value="3">Học sinh/sinh viên quốc tế</option>
+                            <option value="4">Khác</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <select name="cuakhau" class="fully" >
+                            <option value="0">Lào Cai</option>
+                            <option value="1">Vân Đồn</option>
+                            <option value="2">Lao Bảo</option>
+                            <option value="3">A Lưới</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Họ tên(ghi chữ IN HOA) <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input class="fully" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Năm sinh <span>(*)</span></td>
+                    <td>Giới tính <span>(*)</span></td>
+                    <td>Quốc tịch <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="nam" class="fully">
+                            <option value="0">2000</option>
+                            <option value="1">1999</option>
+                            <option value="2">1998</option>
+                            <option value="3">1997</option>
+                            <option value="3">1996</option>
+                            <option value="3">1995</option>
+                            <option value="3">1994</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="gioitinh" class="fully">
+                            <option value="0">-Chọn-</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="quoctich" class="fully">
+                            <option value="0">Việt Nam</option>
+                            <option value="1">Singapo</option>
+                            <option value="2">Trung Quốc</option>
+                            <option value="3">Hoa Kì</option>
+                            <option value="4">Campuchia</option>
+                            <option value="5">Thái Lan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" class="fully">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Thông tin đi lại <span>(*)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50px;">Tàu bay<input type="radio" name="phuongtien"></td>
+                    <td>Tàu thuyền<input type="radio" name="phuongtien"></td>
+                    <td>Ô tô<input type="radio" name="phuongtien"></td>
+                    <td>Khác<input type="radio" name="phuongtien"></td>
+
+                </tr>
+                <tr>
+                    <td>Số hiệu phương tiện</td>
+                    <td>Số ghế</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="VD:KM2345"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Ngày khởi hành <span>(*)</span></td>
+                    <td colspan="">Ngày xuất cảnh <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="ngay" style="width: 80px;" >
+                            <option value="0">01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                            <option value="4">05</option>
+                            <option value="5">06</option>
+                            <option value="6">07</option>
+                            <option value="7">08</option>
+                            <option value="8">09</option>
+                            <option value="9">10</option>
+                            <option value="10">11</option>
+                            <option value="11">12</option>
+                            <option value="12">13</option>
+                            <option value="13">14</option>
+                            <option value="14">15</option>
+                            <option value="15">16</option>
+                            <option value="16">17</option>
+                            <option value="17">18</option>
+                            <option value="18">19</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="thang" style="width: 80px;" >
+                            <option value="0">01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                            <option value="4">05</option>
+                            <option value="5">06</option>
+                            <option value="6">07</option>
+                            <option value="7">08</option>
+                            <option value="8">09</option>
+                            <option value="9">10</option>
+                            <option value="10">11</option>
+                            <option value="11">12</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nam" style="width: 80px;">
+                            <option value="0">2019</option>
+                            <option value="1">2020</option>
+                            <option value="2">2021</option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <select name="ngay" style="width: 80px;">
+                            <option value="0">01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                            <option value="4">05</option>
+                            <option value="5">06</option>
+                            <option value="6">07</option>
+                            <option value="7">08</option>
+                            <option value="8">09</option>
+                            <option value="9">10</option>
+                            <option value="10">11</option>
+                            <option value="11">12</option>
+                            <option value="12">13</option>
+                            <option value="13">14</option>
+                            <option value="14">15</option>
+                            <option value="15">16</option>
+                            <option value="16">17</option>
+                            <option value="17">18</option>
+                            <option value="18">19</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="thang" style="width: 80px;" >
+                            <option value="0">01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                            <option value="4">05</option>
+                            <option value="5">06</option>
+                            <option value="6">07</option>
+                            <option value="7">08</option>
+                            <option value="8">09</option>
+                            <option value="9">10</option>
+                            <option value="10">11</option>
+                            <option value="11">12</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="nam" style="width: 80px;" >
+                            <option value="0">2019</option>
+                            <option value="1">2020</option>
+                            <option value="2">2021</option>
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    <h4>Địa điểm khởi hành(tỉnh/) <span>(*)</span></h4>
+    <div>
+        <form action="#">
+            <table style="width: 75%;">
+                <tr>
+                    <td>Quốc gia/Vùng lãnh thổ <span>(*)</span></td>
+                    <td>Tỉnh <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="quocgia" class="fully">
+                            <option value="0">-Chọn-</option>
+                            <option value="1">Việt Nam</option>
+                            <option value="2">lào </option>
+                            <option value="3">Campuchia</option>
+                            <option value="4">Thái Lan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="tinh" class="fully">
+                            <option value="0">Thừa Thiên Huế</option>
+                            <option value="1">Quảng Bình</option>
+                            <option value="2">Quảng Trị</option>
+                            <option value="3">Hà Tĩnh </option>
+                            <option value="4">Nghệ An</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa điểm nơi đến(tỉnh/quốc gia) <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>Quốc gia/Vùng lãnh thổ <span>(*)</span></td>
+                    <td>Tỉnh <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="quocgia" class="fully">
+                            <option value="0">-Chọn-</option>
+                            <option value="1">Việt Nam</option>
+                            <option value="2">lào </option>
+                            <option value="3">Campuchia</option>
+                            <option value="4">Thái Lan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="tinh" class="fully">
+                            <option value="0">Thừa Thiên Huế</option>
+                            <option value="1">Quảng Bình</option>
+                            <option value="2">Quảng Trị</option>
+                            <option value="3">Hà Tĩnh </option>
+                            <option value="4">Nghệ An</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Trong vòng 14 ngày qua, Anh/Chị có đến quốc gia/vùng lãnh thổ nào? <span>(*)</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="fully"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <h4>Nơi lưu trú sau cách ly tập trung</h4>
+    <div>
+        <form action="#">
+            <table style="width: 75%;">
+             <tr>
+                 <td>Tỉnh/thành <span>(*)</span></td>
+                 <td>Quận/huyện <span>(*)</span></td>
+                 <td>Phường/xã <span>(*)</span></td>
+             </tr>
+             <tr>
+                 <td>
+                    <select name="tinh" class="fully">
+                        <option value="0">Thừa Thiên Huế</option>
+                        <option value="1">Quảng Bình</option>
+                        <option value="2">Quảng Trị</option>
+                        <option value="3">Hà Tĩnh </option>
+                        <option value="4">Nghệ An</option>
+                    </select>  
+                 </td>
+                 <td>
+                    <select name="huyen" class="fully">
+                        <option value="0">Phú Vang</option>
+                        <option value="1">Bố Trạch</option>
+                        <option value="2">Đồng Hới</option>
+                        <option value="3">TP Huế </option>
+                        <option value="4">A Lưới</option>
+                    </select>
+                 </td>
+                 <td>
+                    <select name="tinh" class="fully">
+                        <option value="0">Phú Nhuận</option>
+                        <option value="1">Bắc Lý</option>
+                       
+                    </select>
+                 </td>
+             </tr>
+             <tr>
+                 <td colspan="3">Địa chỉ lưu trú sau cách ly <span>(*)</span></td>
+             </tr>
+             <tr>
+                <td colspan="3"><input class="fully" type="text"></td>
+             </tr>
+            </table>
+        </form>
+    </div>
+    <h4>Địa chỉ liên lạc tại Việt Nam</h4>
+    <div>
+        <form action="#">
+            <table style="width: 75%;">
+             <tr>
+                 <td>Tỉnh/thành <span>(*)</span></td>
+                 <td>Quận/huyện <span>(*)</span></td>
+                 <td>Phường/xã <span>(*)</span></td>
+             </tr>
+             <tr>
+                 <td>
+                    <select name="tinh" class="fully">
+                        <option value="0">Thừa Thiên Huế</option>
+                        <option value="1">Quảng Bình</option>
+                        <option value="2">Quảng Trị</option>
+                        <option value="3">Hà Tĩnh </option>
+                        <option value="4">Nghệ An</option>
+                    </select>  
+                 </td>
+                 <td>
+                    <select name="huyen" class="fully">
+                        <option value="0">Phú Vang</option>
+                        <option value="1">Bố Trạch</option>
+                        <option value="2">Đồng Hới</option>
+                        <option value="3">TP Huế </option>
+                        <option value="4">A Lưới</option>
+                    </select>
+                 </td>
+                 <td>
+                    <select name="tinh" class="fully">
+                        <option value="0">Phú Nhuận</option>
+                        <option value="1">Bắc Lý</option>
+                       
+                    </select>
+                 </td>
+             </tr>
+             <tr>
+                 <td colspan="3">Địa chỉ nơi ở tại Việt Nam <span>(*)</span></td>
+             </tr>
+             <tr>
+                <td colspan="3"><input type="text" class="fully"></td>
+             </tr>
+             <tr>
+                <td colspan="3">Số điện thoại bạn sẽ sử dụng tại Việt Nam (Là số Roaming hoặc số Việt Nam)   </td>
+             </tr>
+             <tr>
+                 <td colspan="3">Điện Thoại <span>(*)</span></td>
+             </tr>
+             <tr>
+                 <td colspan="3"><input type="number" class="fully"></td>
+             </tr>
+            </table>
+        </form>
+    </div>
+    <h4>Trong vòng 14 ngày (tính đến thời điểm làm thủ tục xuất cảnh, nhập cảnh, quá cảnh) Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không? (*)    </h4>
+    <div>
+        <form action="#">
+            <table border="1" style="width: 75%;">
+                <thead  style="background-color: rgb(126, 126, 126);">
+                    <tr>
+                        <th>Triệu Chứng</th>
+                        <th>Có</th>
+                        <th>Không</th>
+                        <th>Triệu Chứng</th>
+                        <th>Có</th>
+                        <th>Không</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sốt <span>(*)</span></td>
+                        <td><input type="radio" name="yes1"></td>
+                        <td><input type="radio" name="yes1"></td>
+                        <td>Nôn/Buồn nôn <span>(*)</span></td>
+                        <td><input type="radio" name="yes2"></td>
+                        <td><input type="radio" name="yes2"></td>
+                    </tr>
+                    <tr>
+                        <td>Ho <span>(*)</span></td>
+                        <td><input type="radio" name="yes3"></td>
+                        <td><input type="radio" name="yes3"></td>
+                        <td>Tiêu Chảy <span>(*)</span></td>
+                        <td><input type="radio" name="yes4"></td>
+                        <td><input type="radio" name="yes4"></td>
+                    </tr>  <tr>
+                        <td>Khó thở <span>(*)</span></td>
+                        <td><input type="radio" name="yes5"></td>
+                        <td><input type="radio" name="yes5"></td>
+                        <td>Xuất huyết ngoài da <span>(*)</span></td>
+                        <td><input type="radio" name="yes6"></td>
+                        <td><input type="radio" name="yes6"></td>
+                    </tr>  <tr>
+                        <td>Đau họng <span>(*)</span></td>
+                        <td><input type="radio" name="yes7"></td>
+                        <td><input type="radio" name="yes7"></td>
+                        <td>Nổi ban ngoài da <span>(*)</span></td>
+                        <td><input type="radio" name="yes8"></td>
+                        <td><input type="radio" name="yes8"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Danh sách vắc-xin hoặc sinh phẩm được sử dụng  </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"><input type="text" class="fully"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <h4>Lịch sử phơi nhiễm: Trong vòng 14 ngày qua, Anh/Chị có <span>(*)</span></h4>
+    <div>
+        <form action="#">
+            <table border="1" style="width: 75%;">
+                <thead style="background-color: rgb(126, 126, 126);">
+                    <th> </th>
+                    <th>Có </th>
+                    <th>Không</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Đến trang trại chăn nuôi / chợ buôn bán động vật sống / cơ sở giết mổ động vật / tiếp xúc động vật <span>(*)</span>
+                        </td>
+                        <td>
+                         <input type="radio" name="no1">
+                        </td>
+                        <td>
+                            <input type="radio" name="no1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tiếp xúc gần (&lt;2m) với người mắc bệnh viêm đường hô hấp do nCoV <span>(*)</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="no2">
+                           </td>
+                           <td>
+                               <input type="radio" name="no2">
+                           </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <h4>Chọn cơ sở cách ly <span>(*)</span></h4>
+    <div class="chon">
+        <input type="radio" name="chon"> Cơ sở cách ly tập trung <br>
+        <input type="radio" name="chon">  Cơ sở cách ly tự chọn<br>
+        <input type="radio" name="chon"> Khác <br>
+    </div>
+    <h4>Phiếu kết quả xét nghiệm/ giấy chứng nhận khỏi covid  </h4>
+    <div class="upfile">
+          <h4>Chọn file tải lên</h4>
+         <p><input type="file"> </p>
+         <input type="text" placeholder="Ngày xét nghiệm"> <br> <br>
+         <input type="checkbox"> Xác nhận âm tính
+         <br>
+    </div>
+    <h4>Đăng ký sim sử dụng tại Việt Nam VIETTEL VINAPHONE MOBIPHONE</h4>
+              <button type="submit">Gửi Tờ Khai</button>
+</form>
+
+
+</body>
+
+</html>
